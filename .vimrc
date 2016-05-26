@@ -22,7 +22,7 @@ Plugin 'vim-scripts/buftabs'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'scrooloose/syntastic'
-Plugin 'vim-scripts/Conque-Shell'
+Plugin 'wkentaro/conque.vim'
 Plugin 'majutsushi/tagbar'
 call vundle#end()
 
