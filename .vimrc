@@ -37,7 +37,9 @@ set ignorecase
 set relativenumber
 set number
 set laststatus=2
+"set colorcolumn=100
 set hidden
+set ruler
 set showtabline=0
 set encoding=utf-8
 set guifont=Sauce_Code_Powerline:h8:cANSI:qDRAFT
