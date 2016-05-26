@@ -33,6 +33,7 @@ set t_Co=256
 syntax on
 
 set tabstop=4
+set shiftwidth=4
 set hlsearch
 set incsearch
 set ignorecase
@@ -59,6 +60,7 @@ set backspace=indent,eol,start
 " Mappings
 set langmenu=en_US
 let $LANG = 'en_US'
+let mapleader=','
 nnoremap n nzz
 nnoremap N Nzz
 nnoremap * *zz
@@ -78,7 +80,10 @@ set scrolloff=10
 
 syntax on 
 set background=dark
-colorscheme base16-mocha
+
+if &t_Co >= 256 || has("gui_running")
+	colorscheme base16-mocha
+endif
 
 :set guioptions-=m  "remove menu bar
 :set guioptions-=T  "remove toolbar
