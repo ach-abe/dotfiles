@@ -1,0 +1,15 @@
+"1.0b6 (created: 2011/03/09 09:25:18)
+colorscheme myzenburn
+loadplugins '\.(js|penta)$'
+group user
+
+set guioptions=Cs
+set showtabline=never
+set sf=*:laissez-faire
+
+" vim: set ft=pentadactyl:
+
+" Facebook pass keys
+group -description 'Pass keys to Facebook in insert mode' -locations=www.facebook.com facebookinsert
+imap <Return> <Pass>
+imap <S-Return> <Pass>
