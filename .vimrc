@@ -22,6 +22,8 @@ Plugin 'vim-scripts/buftabs'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'scrooloose/syntastic'
+Plugin 'vim-scripts/Conque-Shell'
+Plugin 'majutsushi/tagbar'
 call vundle#end()
 
 " General
@@ -67,6 +69,7 @@ nnoremap <ESC> :noh<CR><ESC>
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
 map <C-n> :NERDTreeToggle<CR>
+map <C-j> :TagbarToggle<CR>
 map <c-f> :call JsBeautify()<cr>
 
 set scrolloff=10
