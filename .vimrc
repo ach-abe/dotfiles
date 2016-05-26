@@ -65,6 +65,8 @@ nnoremap * *zz
 nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
+nnoremap <Leader>n :lnext<CR>
+nnoremap <Leader>p :lprev<CR>
 nnoremap <ESC> :noh<CR><ESC>
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
