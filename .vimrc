@@ -62,6 +62,8 @@ nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
 nnoremap <ESC> :noh<CR><ESC>
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
 map <C-n> :NERDTreeToggle<CR>
 map <c-f> :call JsBeautify()<cr>
 
