@@ -4,6 +4,7 @@ filetype off
 set rtp+=~/vimfiles/bundle/vundle.vim
 
 call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'scwood/vim-hybrid'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -24,6 +25,8 @@ Plugin 'maksimr/vim-jsbeautify'
 Plugin 'scrooloose/syntastic'
 Plugin 'wkentaro/conque.vim'
 Plugin 'majutsushi/tagbar'
+Plugin 'mileszs/ack.vim'
+Plugin 'vim-rooter'
 call vundle#end()
 
 " General
@@ -61,12 +64,15 @@ set backspace=indent,eol,start
 set langmenu=en_US
 let $LANG = 'en_US'
 let mapleader=','
+let g:rooter_patterns = ['node_modules/']
+
 nnoremap n nzz
 nnoremap N Nzz
 nnoremap * *zz
 nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
+nnoremap <C-A>v "*p
 nnoremap <Leader>n :lnext<CR>
 nnoremap <Leader>p :lprev<CR>
 nnoremap <ESC> :noh<CR><ESC>
@@ -82,7 +88,7 @@ syntax on
 set background=dark
 
 if &t_Co >= 256 || has("gui_running")
-	colorscheme base16-mocha
+	colorscheme base16-tomorrow
 endif
 
 :set guioptions-=m  "remove menu bar
