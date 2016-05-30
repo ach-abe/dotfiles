@@ -75,6 +75,7 @@ nnoremap g# g#zz
 nnoremap <C-A>v "*p
 nnoremap <Leader>n :lnext<CR>
 nnoremap <Leader>p :lprev<CR>
+nnoremap <Leader>c :ccl <bar> lcl<CR>
 nnoremap <ESC> :noh<CR><ESC>
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
