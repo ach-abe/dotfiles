@@ -52,6 +52,9 @@ set encoding=utf-8
 set guifont=Sauce_Code_Powerline:h8:cANSI:qDRAFT
 set ssop-=options
 set ssop-=folds
+set splitright
+set splitbelow
+
 
 " Airline
 let g:airline_powerline_fonts = 1
@@ -67,6 +70,10 @@ let $LANG = 'en_US'
 let mapleader=','
 let g:rooter_patterns = ['node_modules/']
 
+nnoremap <A-Down> <C-W><C-J>
+nnoremap <A-Up> <C-W><C-K>
+nnoremap <A-Right> <C-W><C-L>
+nnoremap <A-Left> <C-W><C-H>
 nnoremap n nzz
 nnoremap N Nzz
 nnoremap * *zz
