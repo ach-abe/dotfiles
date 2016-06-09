@@ -90,6 +90,10 @@ nnoremap <S-Tab> :bprevious<CR>
 map <C-n> :NERDTreeToggle<CR>
 map <C-j> :TagbarToggle<CR>
 map <c-f> :call JsBeautify()<cr>
+map <silent> <A-h> <C-w><
+map <silent> <A-j> <C-W>-
+map <silent> <A-k> <C-W>+
+map <silent> <A-l> <C-w>>
 
 set scrolloff=10
 
