@@ -43,6 +43,7 @@ set ignorecase
 set relativenumber
 set number
 set laststatus=2
+set nosol
 "set colorcolumn=100
 set hidden
 set ruler
