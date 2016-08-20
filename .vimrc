@@ -27,10 +27,15 @@ Plugin 'wkentaro/conque.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'mileszs/ack.vim'
 Plugin 'vim-rooter'
+Plugin 'hail2u/vim-css3-syntax'
 call vundle#end()
 
 " General
 filetype plugin indent on
+
+" Autocommands
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+
 
 set t_Co=256
 syntax on
@@ -103,7 +108,7 @@ syntax on
 set background=dark
 
 if &t_Co >= 256 || has("gui_running")
-	colorscheme base16-tomorrow
+	colorscheme base16-tomorrow-night
 endif
 
 :set guioptions-=m  "remove menu bar
