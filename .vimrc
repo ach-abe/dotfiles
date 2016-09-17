@@ -28,6 +28,8 @@ Plugin 'majutsushi/tagbar'
 Plugin 'mileszs/ack.vim'
 Plugin 'vim-rooter'
 Plugin 'hail2u/vim-css3-syntax'
+Plugin 'Valloric/MatchTagAlways'
+Plugin 'tmhedberg/matchit'
 call vundle#end()
 
 " General
@@ -97,6 +99,7 @@ nnoremap <S-Tab> :bprevious<CR>
 map <C-n> :NERDTreeToggle<CR>
 map <C-j> :TagbarToggle<CR>
 map <c-f> :call JsBeautify()<cr>
+map <c-h> :call HtmlBeautify()<cr>
 map <silent> <A-h> <C-w><
 map <silent> <A-j> <C-W>-
 map <silent> <A-k> <C-W>+
@@ -117,7 +120,7 @@ endif
 :set guioptions-=L  "remove left-hand scroll bar
 
 set encoding=utf-8   
-set rop=type:directx,gamma:1.0,contrast:0.5,level:1,geom:1,renmode:4,taamode:1
+set rop=type:directx,gamma:1.0,contrast:1.0,level:1,geom:0.3,renmode:5,taamode:1
 au GUIEnter * simalt ~x
 
 set statusline+=%#warningmsg#
