@@ -38,10 +38,10 @@ filetype plugin indent on
 " Autocommands
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
-
 set t_Co=256
 syntax on
 
+set wildmenu
 set tabstop=4
 set shiftwidth=4
 set hlsearch
