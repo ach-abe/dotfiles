@@ -30,6 +30,8 @@ Plugin 'vim-rooter'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'Valloric/MatchTagAlways'
 Plugin 'tmhedberg/matchit'
+Plugin 'OmniSharp/omnisharp-vim'
+Plugin 'tpope/vim-dispatch'
 call vundle#end()
 
 " General
