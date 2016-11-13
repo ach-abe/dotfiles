@@ -28,14 +28,17 @@ Plugin 'majutsushi/tagbar'
 Plugin 'mileszs/ack.vim'
 Plugin 'vim-rooter'
 Plugin 'hail2u/vim-css3-syntax'
-Plugin 'Valloric/MatchTagAlways'
-Plugin 'tmhedberg/matchit'
 Plugin 'OmniSharp/omnisharp-vim'
 Plugin 'tpope/vim-dispatch'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'vim-gitgutter'
 call vundle#end()
 
 " General
 filetype plugin indent on
+
+" Indent
+"let g:indentLine_char = '.'
 
 " Autocommands
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
